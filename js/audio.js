@@ -1,5 +1,22 @@
 console.log("start audio.js");
-var html, body, audio;
-html = document.children[0];
-body = html.children[1];
-audio = body.children[1];
+
+function play(){
+    var audio;
+    audio = document.querySelector("audio");
+ 
+    audio.play();
+}
+
+function pause(){
+    var audio;
+    audio = document.querySelector("audio");
+ 
+    audio.pause();
+}
+
+function skip10sec(){
+    var audio;
+    audio = document.querySelector("audio");
+ 
+    audio.currentTime = audio.currentTime + 10;
+}
