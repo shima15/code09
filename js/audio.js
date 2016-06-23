@@ -20,3 +20,9 @@ function skip10sec(){
  
     audio.currentTime = audio.currentTime + 10;
 }
+
+var playButton = document.querySelector("[data-role=play]");
+playButton.addEventListener("click", play);
+
+var playButton = document.querySelector("[data-role=pause]");
+playButton.addEventListener("click", pause);
